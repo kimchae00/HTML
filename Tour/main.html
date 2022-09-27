@@ -70,13 +70,13 @@
         border-left: 1px solid white;
     }
 
-    #content {
+    main {
         padding-top: 28px;
     }
 
-    #content > div:nth-child(1) {position: absolute;}
+    main > div:nth-child(1) {position: absolute;}
 
-    #content > .mama {
+    main > .mama {
         position: relative;
         width: 1000px;
         height: 620px;
@@ -84,7 +84,7 @@
         background: url(../Tour/img/main_bg.png);
     }
 
-    #content > .mama > #article > div:nth-child(1) {
+    main > .mama > #article > div:nth-child(1) {
         position: absolute;
         width: 200px;
         height: 200px;
@@ -103,7 +103,7 @@
         top: 0px;
     }
     
-    #content > .mama > #article > div:nth-child(2) {
+    main > .mama > #article > div:nth-child(2) {
         text-align: center;
         padding-top: 30px;
         box-sizing: border-box;
@@ -115,7 +115,7 @@
         background: url(../Tour/img/main_box2_bg.png);
     }
 
-    #content > .mama > #article > div:nth-child(3) {
+    main > .mama > #article > div:nth-child(3) {
         width: 200px;
         height: 200px;
         left: 400px;
@@ -127,14 +127,14 @@
         box-sizing: border-box;
     }
 
-    #content > .mama > #article > div:nth-child(3) > img:nth-child(1) {
+    main > .mama > #article > div:nth-child(3) > img:nth-child(1) {
         position: absolute;
         margin-left: 10px;
         left: 20px;
         top: 0;
     }
 
-    #content > .mama > #article > div:nth-child(4) {
+    main > .mama > #article > div:nth-child(4) {
         width: 200px;
         height: 200px;
         left: 600px;
@@ -146,7 +146,7 @@
         box-sizing: border-box;
     }
 
-    #content > .mama > #article > div:nth-child(5) {
+    main > .mama > #article > div:nth-child(5) {
         width: 200px;
         height: 200px;
         background: url(../Tour/img/main_box5_bg.jpg) no-repeat;
@@ -154,13 +154,13 @@
         top: 200px;
     }
 
-    #content > .mama > #article > div:nth-child(5) > img {
+    main > .mama > #article > div:nth-child(5) > img {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    #content > .mama > #article > div:nth-child(6) {
+    main > .mama > #article > div:nth-child(6) {
         width: 200px;
         height: 200px;
         background: url(../Tour/img/main_box6_bg.jpg) no-repeat;
@@ -169,11 +169,11 @@
         left: 200px;
     }
 
-    #content > .mama > #article > div:nth-child(6) > img {
+    main > .mama > #article > div:nth-child(6) > img {
         float: right;
     }
 
-    #content > .mama > #article > div:nth-child(7) {
+    main > .mama > #article > div:nth-child(7) {
         width: 200px;
         height: 200px;
         background: url(../Tour/img/main_box7_bg.png);
@@ -185,22 +185,22 @@
         box-sizing: border-box;
     }
 
-    #content > .mama > #article > div:nth-child(7) > img:nth-child(1) {
-            position: absolute;
-            left: 20px;
-            top: 20px;
+    main > .mama > #article > div:nth-child(7) > img:nth-child(1) {
+        position: absolute;
+        left: 20px;
+        top: 20px;
     }
 
-    #content > .mama > #article > div:nth-child(7) > img:nth-child(2) {
-            position: absolute;
-            left: 20px;
-            top: 50px;
+    main > .mama > #article > div:nth-child(7) > img:nth-child(2) {
+        position: absolute;
+        left: 20px;
+        top: 50px;
     }
 
-    #content > .mama > #article > div:nth-child(7) > img:nth-child(3) {
-            position: absolute;
-            left: 22px;
-            top: 105px;
+    main > .mama > #article > div:nth-child(7) > img:nth-child(3) {
+        position: absolute;
+        left: 22px;
+        top: 105px;
     }
 
     #aside {position: relative;}
@@ -214,15 +214,15 @@
     }
 
     #aside > img:nth-child(2) {
-    background-position: center;
-    position: absolute;
-    right: 148px;
-    top: -612px;
-    width: 32px;
-    height: 130px;
-    z-index: 1000;
-    width: 13px;
-    height: 100px;
+        background-position: center;
+        position: absolute;
+        right: 148px;
+        top: -612px;
+        width: 32px;
+        height: 130px;
+        z-index: 1000;
+        width: 13px;
+        height: 100px;
     }
 
     #latest {
@@ -366,9 +366,9 @@
                 </nav>
             </div>
         </header>
-        <div id="content">
+        <main>
             <div></div>
-            <div class="mama">
+            <section class="mama">
                 <div id="article">
                     <div class="box1">
                         <img src="img/main_box1_img.png" alt="나뭇잎">
@@ -403,8 +403,8 @@
                         <img src="img/main_floating_bg.png" alt="옆">
                         <img src="img/main_floating_tit.png" alt="글자">
                     </div>
-            </div>        
-                <div id="latest">
+                </section>        
+                <article id="latest">
                     <div class="info1">
                         <img src="img/info.png" alt="정보">
                         <img src="img/happy.png" alt="행복">
@@ -487,8 +487,8 @@
                             <a href="#"><img src="img/main_latest_gallery3.jpg" alt="갤러리3"></a>
                         </div>
                     </div>
-                </div>
-        </div>
+                </article>
+            </main>
         <footer>
             <div id="address">
                 <img src="img/footer_logo.png" class="logo" alt="logo">
