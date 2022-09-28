@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+        #board.write {
+            width: 720px;
+            height: auto;
+            margin: 65px auto;
+        }
+        
+        #board.write > table {
+            width: 100%;
+            height: auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-top: 2px solid #111;
+        }
+        #board.write > table caption {
+            text-align: left;
+            margin-bottom: 6px;
+        }
+        #board.write > table tr {}
+        #board.write > table th:nth-child(1) {
+            width: 120px;
+            height: 50px;
+        }
+        #board.write > table th:nth-child(2) {}
+        #board.write > table th:nth-child(3) {}
+
+
+        #board.write > div > .btnCancel {}
+        #board.write > div > .btnWrite {}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>Board System v1.0</h3>
+            <p>
+                <span class="nick">길동이</span>님 반갑습니다.
+                <a href="#" class="logout">[로그아웃]</a>
+            </p>
+        </header>
+        <main id="board" class="write">
+    
+            <table border="1">
+                <caption>글쓰기</caption>
+                <tr>
+                    <th>제목</th>
+                    <td>
+                        <input type="text" name="title" placeholder="제목을 입력하세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>
+                        <input type="text" name="contents">
+                    </td>
+                </tr>
+                <tr>
+                    <th>첨부</th>
+                    <td>
+                        <input type="file" name="file" placeholder="선택된 파일 없음">
+                    </td>
+                </tr>
+            </table>
+
+            <div>
+                <a href="#" class="btnCancel">취소</a>
+                <input type="submit" class="btnWrite" value="작성완료"/>
+            </div>
+        </main>    
+        <footer>
+            <p>ⓒCopyleft by kimchae00.or.kr</p>
+        </footer>
+        </div>  
+    </body>
+    </html>
