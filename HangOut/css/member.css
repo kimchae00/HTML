@@ -1,0 +1,321 @@
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", Helvetica, sans-serif,
+    Arial;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+}
+img {
+  border-style: none;
+  max-width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+#wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+header {
+  min-width: 1200px;
+  width: 100%;
+  height: 105px;
+  position: relative;
+}
+
+header > div {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header > .logo img {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 200px;
+}
+
+.terms {
+  min-width: 1200px;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.terms > .div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.terms .top {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.terms-content {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+.content {
+  padding: 25px 25px 0;
+}
+.content > h4 {
+  display: block;
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.content > textarea {
+  width: 900px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #cfcece;
+}
+
+.terms-check {
+  width: 300px;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 60px;
+}
+
+.terms-check > input {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+.terms-check > p {
+  font-size: 20px;
+  float: left;
+}
+
+.terms-check div {
+  display: inline-block;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: -397px;
+}
+.terms-check div input {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.terms-check div p {
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top: -35px;
+}
+
+.button {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.btnCancel {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-left: 12px;
+  border: none;
+  background: #1b753c;
+  text-align: center;
+}
+.btnNext {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 50px;
+  border: none;
+  background: #1b753c;
+  text-align: center;
+}
+.btnCancel > a,
+.btnNext > a {
+  color: #fff;
+}
+.btnCancel:hover,
+.btnNext:hover {
+  background: #0f4121;
+  cursor: pointer;
+}
+
+.register {
+  min-width: 1200px;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.register > .div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.register .top {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.register > .div2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.register_table {
+  padding-top: 50px;
+}
+.register_table tr {
+  border-bottom: 1px solid #493a3a;
+}
+
+.register_table tr > td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.register_table tr > td:nth-child(1) {
+  display: block;
+  width: 400px;
+  height: 40px;
+  float: left;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-top: 7px;
+  line-height: 30px;
+}
+
+.register_table tr > td:nth-child(2) {
+  float: left;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.register_table tr > td:nth-child(2) > input {
+  font-size: 15px;
+}
+
+.register_table tr > td:nth-child(2) > input:nth-child(1) {
+  width: 450px;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  font-size: 17px;
+}
+
+.register_table tr > td:nth-child(2) > input:nth-child(2) {
+  width: 120px;
+  height: 40px;
+  margin: 0 0 0 5px;
+  color: #fff;
+  background: #0c7544;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+}
+.register_table tr > td:nth-child(2) > input:nth-child(2):hover {
+  background: #074427;
+  cursor: pointer;
+}
+
+input[name="addr1"] {
+  display: block;
+  width: 470px;
+  height: 40px;
+  margin-top: 5px;
+  text-indent: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+input[name="addr2"] {
+  display: block;
+  width: 470px;
+  height: 40px;
+  margin-top: 5px;
+  text-indent: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+footer {
+  margin-top: 100px;
+  height: 100px;
+  background: #ceebde;
+  padding: 43px 0 75px;
+}
+.footer-col:first-child {
+  max-width: 524px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.info {
+  margin: 0 -8px;
+}
+.info li {
+  float: left;
+  padding: 8px;
+  line-height: 0.8;
+  font-size: 17px;
+  color: #0d4e31;
+  font-weight: 300;
+}
+.info li:first-child {
+  font-weight: bold;
+  font-weight: 700;
+}
+.link {
+  margin: -10px;
+}
+.link li {
+  float: left;
+  padding: 0 2px;
+}
+.link li a {
+  display: block;
+  line-height: 1;
+  font-family: bold;
+  font-size: 17px;
+  color: #0d4e31;
+  font-weight: 700;
+  padding: 2px;
+  margin: 0 2px 10px;
+}
