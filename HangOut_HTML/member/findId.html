@@ -22,41 +22,36 @@
       src="https://kit.fontawesome.com/20962f3e4b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="../css/member.css" />
   </head>
   <body>
     <div id="wrapper">
       <header class="header">
         <div class="logo">
-          <a href="../index.html"><img src="./img/logo.png" alt="logo" /></a>
+          <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
         </div>
       </header>
-      <main>
-        <section>
-          <section class="login">
-            <div>
-              <h3>로그인을 먼저 해주세요!</h3>
-              <div class="form">
-                <form action="#">
-                  <input type="text" name="uid" placeholder="아이디" />
-                  <input type="password" name="pass" placeholder="비밀번호" />
-                  <input type="submit" id="login" value="GO" />
-                </form>
-              </div>
-              <ul class="menu">
-                <li>
-                  회원이 아니세요?
-                  <a href="./member/terms.html">회원가입</a>
-                </li>
-                <li>
-                  아이디/비밀번호를 잊으셨나요?
-                  <a href="./member/findId.html">아이디찾기</a>&nbsp; |&nbsp;
-                  <a href="./member/findPw.html">비밀번호찾기</a>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </section>
+      <main class="findId">
+        <div class="div">
+          <div class="top">
+            <h3>아이디 찾기</h3>
+          </div>
+        </div>
+        <div style="margin-top: 60px">
+          <div class="id">
+            <input type="text" name="uid" placeholder="이름" />
+            <input type="password" name="pass" placeholder="이메일" />
+          </div>
+          <div class="result">
+            <p>회원님의 아이디는 aaa입니다.</p>
+          </div>
+          <div class="button" style="padding-top: 50px">
+            <a href="../index.html">
+              <input type="button" class="btnCancel" value="취소" />
+            </a>
+            <input type="submit" class="btnNext" value="가입" />
+          </div>
+        </div>
       </main>
       <div class="footer_div">
         <footer>

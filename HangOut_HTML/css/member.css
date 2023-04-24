@@ -30,6 +30,7 @@ button {
   min-width: 1200px;
 }
 
+/* 헤더 */
 header {
   min-width: 1200px;
   width: 100%;
@@ -50,6 +51,55 @@ header > .logo img {
   width: 200px;
 }
 
+/* 푸터 */
+footer {
+  margin-top: 100px;
+  height: 100px;
+  background: #ceebde;
+  padding: 43px 0 75px;
+}
+.footer-col:first-child {
+  max-width: 524px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.info {
+  margin: 0 -8px;
+}
+.info li {
+  float: left;
+  padding: 8px;
+  line-height: 0.8;
+  font-size: 17px;
+  color: #0d4e31;
+  font-weight: 300;
+}
+.info li:first-child {
+  font-weight: bold;
+  font-weight: 700;
+}
+.link {
+  margin: -10px;
+}
+.link li {
+  float: left;
+  padding: 0 2px;
+}
+.link li a {
+  display: block;
+  line-height: 1;
+  font-family: bold;
+  font-size: 17px;
+  color: #0d4e31;
+  font-weight: 700;
+  padding: 2px;
+  margin: 0 2px 10px;
+}
+
+/* 약관 */
 .terms {
   min-width: 1200px;
   width: 100%;
@@ -171,6 +221,7 @@ header > .logo img {
   cursor: pointer;
 }
 
+/* 회원가입 */
 .register {
   min-width: 1200px;
   width: 100%;
@@ -273,49 +324,56 @@ input[name="addr2"] {
   border: 1px solid #e5e5e5;
 }
 
-footer {
-  margin-top: 100px;
+/* 아이디 찾기 */
+.findId {
+  min-width: 1200px;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.findId > .div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.findId .top {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.findId .id {
+  padding: 70px;
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #cfcfcf;
+  text-align: center;
+  font-size: 20px;
+}
+
+.findId input {
+  margin-top: 25px;
+  width: 600px;
+  height: 70px;
+  text-indent: 20px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.findId .result {
+  width: 900px;
   height: 100px;
-  background: #ceebde;
-  padding: 43px 0 75px;
-}
-.footer-col:first-child {
-  max-width: 524px;
-}
-.footer .container {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-}
-.info {
-  margin: 0 -8px;
-}
-.info li {
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-left: 200px;
   float: left;
-  padding: 8px;
-  line-height: 0.8;
-  font-size: 17px;
-  color: #0d4e31;
-  font-weight: 300;
 }
-.info li:first-child {
-  font-weight: bold;
-  font-weight: 700;
-}
-.link {
-  margin: -10px;
-}
-.link li {
+.findId p {
+  width: 600px;
+  margin: 0 auto;
   float: left;
-  padding: 0 2px;
-}
-.link li a {
-  display: block;
-  line-height: 1;
-  font-family: bold;
-  font-size: 17px;
-  color: #0d4e31;
-  font-weight: 700;
-  padding: 2px;
-  margin: 0 2px 10px;
+  font-size: 20px;
 }
