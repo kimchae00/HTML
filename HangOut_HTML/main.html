@@ -22,36 +22,49 @@
       src="https://kit.fontawesome.com/20962f3e4b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../css/member.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <div id="wrapper">
       <header class="header">
         <div class="logo">
-          <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+          <a href="../index.html"><img src="./img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="search">
+          <input type="search" ></input>
+          <img src="./img/search.png" alt="검색" />
+        </div>
+        <div class="plus">
+          <img src="./img/users.png" alt="친구신청">
+        </div>
+        <div class="chat">
+          <img src="./img/message.png" alt="채팅">
         </div>
       </header>
-      <main class="find findId">
-        <div class="div">
-          <div class="top">
-            <h3>아이디 찾기</h3>
-          </div>
-        </div>
-        <div style="margin-top: 60px">
-          <div class="id">
-            <input type="text" name="name" placeholder="이름" />
-            <input type="password" name="email" placeholder="이메일" />
-          </div>
-          <div class="result">
-            <p>회원님의 아이디는 aaa입니다.</p>
-          </div>
-          <div class="button" style="padding-top: 50px">
-            <a href="../index.html">
-              <input type="button" class="btnCancel" value="취소" />
-            </a>
-            <input type="submit" class="btnNext" value="아이디 찾기" />
-          </div>
-        </div>
+      <main>
+        <section>
+          <section class="friend">
+            <h3>친구목록</h3>
+            <a href="#"> MORE &nbsp; > </a>
+            <ul>
+              <li>
+                <img src="./img/woman.jpg" alt="profile" style="width: 100px;">
+                <p>김땡땡</p>
+                <img src="./img/message.png" alt="chat" style="width: 100px;">
+              </li>
+              <li>
+                <img src="./img/woman.jpg" alt="profile" style="width: 100px;">
+                <p>김키키</p>
+                <img src="./img/message.png" alt="chat" style="width: 100px;">
+              </li>
+              <li>
+                <img src="./img/man.png" alt="profile" style="width: 100px;">
+                <p>김코코</p>
+                <img src="./img/message.png" alt="chat" style="width: 100px;">
+              </li>
+            </ul>
+          </section>
+        </section>
       </main>
       <div class="footer_div">
         <footer>

@@ -50,11 +50,40 @@ header > .logo img {
   width: 200px;
 }
 
+header > .search input {
+  position: absolute;
+  top: 60px;
+  left: 400px;
+  width: 950px;
+  height: 70px;
+}
+
+header > .search img {
+  position: absolute;
+  top: 63px;
+  left: 1260px;
+  width: 70px;
+}
+
+header > .plus img {
+  position: absolute;
+  top: 45px;
+  right: 270px;
+  width: 90px;
+}
+
+header > .chat img {
+  position: absolute;
+  top: 53px;
+  right: 122px;
+  width: 90px;
+}
+
 main {
   min-width: 1200px;
   width: 100%;
   height: auto;
-  min-height: 800px;
+  min-height: 900px;
   margin: 0 auto;
   padding-top: 150px;
 }
@@ -64,85 +93,53 @@ main > section {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  position: relative;
 }
 
-main > section > section {
-  width: 100%;
-  height: auto;
+.friend {
+  padding: 30px;
+  width: 500px;
+  height: 850px;
+  border: 1px solid #c2c1c1;
+  margin-left: 300px;
 }
 
-main > section > .login {
-  width: 1000px;
-  height: 600px;
-  margin: 0 auto;
-  border: none;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.friend h3 {
+  font-size: 35px;
+  margin: 18px;
 }
-main > section > .login h3 {
-  margin-top: 70px;
-  font-size: 40px;
-  color: #0d4e31;
-}
-
-main > section > .login .form {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 50px;
-}
-.login input {
-  display: block;
-  width: 550px;
-  height: 60px;
-  margin-bottom: 5px;
-  padding: 5px;
-  text-indent: 10px;
-  border: 1px solid #c6e0bf;
-}
-.login input:nth-of-type(1) {
-  margin-top: 30px;
-  margin-bottom: 15px;
+.friend a {
   font-size: 20px;
-}
-.login input:nth-of-type(2) {
-  font-size: 20px;
-  margin-bottom: 60px;
-}
-
-.login input:nth-of-type(3) {
-  width: 565px;
-  height: 80px;
-  background-color: #4fc58e;
-  border: none;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+  float: right;
+  margin-top: -53px;
+  margin-right: 240px;
 }
 
-.login input:nth-of-type(3):hover {
-  background-color: #33835e;
-  cursor: pointer;
+.friend ul {
+  margin: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; /* this centers the items vertically */
+  align-items: left;
 }
 
-.login .menu {
-  margin-top: 40px;
-  line-height: 10px;
+.friend ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.login .menu li:nth-child(1) {
-  font-size: 22px;
-  margin-bottom: 30px;
+.friend ul > li p {
+  margin-left: 50px;
+  font-size: 27px;
 }
-.login .menu li:nth-child(2) {
-  margin-bottom: 10px;
-  font-size: 22px;
+.friend ul > li img:nth-of-type(2) {
+  margin-left: 150px;
+  font-size: 24px;
 }
-.login .menu li a:hover {
-  color: #0d4e31;
-  font-weight: bold;
-}
+
 footer {
   margin-top: 100px;
   height: 100px;
