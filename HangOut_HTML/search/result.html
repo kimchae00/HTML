@@ -22,38 +22,47 @@
       src="https://kit.fontawesome.com/20962f3e4b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="../css/search.css" />
   </head>
   <body>
     <div id="wrapper">
       <header class="header">
+        <div class="top">
+          <span>김채영님 반가워요!</span>
+          <a href="#">로그아웃</a>
+          <a href="#">마이페이지</a>
+        </div>
         <div class="logo">
-          <a href="./index.html"><img src="./img/logo.png" alt="logo" /></a>
+          <a href="../main.html"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="친구이름 검색" />
+          <a href="./result.html">
+            <img src="../img/search.png" alt="검색" />
+          </a>
+        </div>
+        <div class="plus">
+          <a href="#">
+            <img src="../img/users.png" alt="친구신청" />
+          </a>
+        </div>
+        <div class="chat">
+          <img src="../img/message.png" alt="채팅" />
         </div>
       </header>
       <main>
         <section>
-          <section class="login">
-            <div>
-              <h3>로그인을 먼저 해주세요!</h3>
-              <div class="form">
-                <form action="#">
-                  <input type="text" name="uid" placeholder="아이디" />
-                  <input type="password" name="pass" placeholder="비밀번호" />
-                  <input type="submit" id="login" value="GO" />
-                </form>
+          <section class="search">
+            <div class="container">
+              <div class="div">
+                <h2><strong>김채영</strong> 검색결과</h2>
+                <ul>
+                  <li>
+                    <span class="status0">김땡떙</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="menu">
-                <li>
-                  회원이 아니세요?
-                  <a href="./member/terms.html">회원가입</a>
-                </li>
-                <li>
-                  아이디/비밀번호를 잊으셨나요?
-                  <a href="./member/findId.html">아이디찾기</a>&nbsp; |&nbsp;
-                  <a href="./member/findPw.html">비밀번호찾기</a>
-                </li>
-              </ul>
+              <div class="paging"></div>
             </div>
           </section>
         </section>
